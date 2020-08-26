@@ -1,3 +1,27 @@
+
+# A sample Gemfile
+source "https://rubygems.org"
+
+gem 'sinatra'
+gem 'thin'
+gem 'require_all'
+gem 'activerecord', '5.2'  #DB mapping and association powers
+gem 'sinatra-activerecord' #Provides access to Rake Tasks 
+gem 'rake' #Ruby Make This let's us quickly create files and folders, automate db creation  
+
+
+group :development do
+	gem 'shotgun'
+	gem 'pry'
+	gem 'tux' #Provides an interactive ruby console that pre-loads our DB and AR Relationships. 
+	gem 'sqlite3', '~> 1.3.6' #DB Adapter which allows Ruby to communicate with SQL DB.
+
+end
+
+
+
+
+
 # Sinatra Activerecord Setup
 
 ## Objectives
